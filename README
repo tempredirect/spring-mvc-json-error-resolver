@@ -1,1 +1,11 @@
-This file was created by IntelliJ IDEA 10.0.3 for binding GitHub repository
+This is a simple Spring MVC 3.0.5 web application to demonstrate an issue using @ResponseStatus(reason = 'Message')
+
+Usage:
+
+> mvn tomcat:run
+
+> curl -v http://localhost:8080/404
+
+> curl -v http://localhost:8080/404b
+
+both requests are implemented to throw an exception, but the /404b request is handled by a method annotated with the 'reason' attribute.
