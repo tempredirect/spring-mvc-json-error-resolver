@@ -10,8 +10,19 @@
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>pure</servlet-name>
+    <servlet-class>com.logicalpractice.springmvcjsonerrorresolver.PureServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pure</servlet-name>
+    <url-pattern>/pure</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>api</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
+
+
 </web-app>
